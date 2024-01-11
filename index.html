@@ -1,11 +1,48 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <script src="js/scripts.js"></script>
-    <link rel="stylesheet" href="css/styles.css" type="text/css">
-    <title>Calculator</title>
-  </head>
-  <body>
-    <h1>Calculator</h1>
-  </body>
+<head>
+  <title>Calculator</title>
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/scripts.js"></script>
+</head>
+<body>
+  <h1>Calculator</h1>
+    <form id="calcForm">
+
+      <label for="number1">A number</label>
+      <input id="number1" type="number" name="number1">
+      
+      <label for="number2">A second number</label>
+      <input id="number2" type="text" name="number2">
+      <br><br>
+      <label>
+        <input type="radio" name="operator" value="add" checked>
+        Add
+      </label><br/>
+      <label>
+        <input type="radio" name="operator" value="subtract">
+        Subtract
+      </label><br/>
+      <label>
+        <input type="radio" name="operator" value="multiply">
+        Multiply
+      </label><br/>
+      <label>
+        <input type="radio" name="operator" value="divide">
+        Divide
+      </label><br/>
+      <br>
+      <button type="submit">Submit Selection</button>
+    </form>
+
+
+<!-- Form: 
+- Number 1
+- Number 2
+- Radio Button, add/subtract/mult/div 
+- Result -->
+
+  <h2>Results</h2>
+  <p id="output"></p>
+</body>
 </html>
